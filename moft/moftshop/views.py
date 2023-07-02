@@ -1,30 +1,30 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Product
+from .models import Category, Product, ProductType
 from django.http import HttpResponse
 
 
 
 menu = ['Для телефона', 'Для планшета', 'Для ноутбука']
 
-def index(request):
-    products = Product.objects.all()
-    return render(request, 'moftshop/index.html', {'products': products, 'menu': menu, 'title': 'Главная страница'})
-
 def about(request):
     return render(request, 'moftshop/about.html', {'menu': menu, 'title': 'О сайте'})
 
-def product_list(request, category_slug=None):
-    category = None
-    categories = Category.objects.all()
-    products = Product.objects.filter(available=True)
-    if category_slug:
-        category = get_object_or_404(Category, slug=category_slug)
-        products = products.filter(category=category)
-    return render(request, 'shop/product/list.html',
+def index(request):
+    typeHolder = ProductType.objects.get(code='holder')
+    phonesCategory = Category.objects.get(code='phone')
+    tabletCategory = Category.objects.get(code='tablet')
+    laptopCategory = Category.objects.get(code='laptop')
+
+    phoneHolders = Product.objects.filter(productType=typeHolder.id, category=phonesCategory.id).all()
+    tabletHolders = Product.objects.filter(productType=typeHolder.id, category=tabletCategory.id)
+    laptopHolders = Product.objects.filter(productType=typeHolder.id, category=laptopCategory.id)
+
+    return render(request, 'moftshop/index.html',
                   {
-                      'category': category,
-                      'categories': categories,
-                      'products': products
+                      'title': 'Главная страница',
+                      'phoneHolders': phoneHolders,
+                      'tabletHolders': tabletHolders,
+                      'laptopHolders': laptopHolders
                   })
 
 # def product_detail(request, id, slug):
