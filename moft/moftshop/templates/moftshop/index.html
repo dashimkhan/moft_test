@@ -1,5 +1,11 @@
 {% extends 'moftshop/base.html' %}
 
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'moftshop/css/index.css' %}">
+{% endblock %}
+
 {% block content %}
 <h1>{{title}}</h1>
 <ul>
