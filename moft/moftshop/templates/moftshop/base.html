@@ -1597,193 +1597,10 @@
 
             <!-- Nav -->
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item dropdown position-static">
-
-                    <!-- Toggle -->
-                    <a class="nav-link" data-bs-toggle="dropdown" href="#">Каталог</a>
-
-                    <!-- Menu -->
-                    <div class="dropdown-menu w-100">
-
-                        <!-- Tabs -->
-                        <div class="mb-2 mb-lg-0 border-bottom-lg">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-
-                                        <!-- Nav -->
-                                        <nav class="nav nav-tabs nav-overflow fs-xs border-bottom border-bottom-lg-0">
-                                            <a class="nav-link text-uppercase active" data-bs-toggle="tab"
-                                               href="#phoneTab">
-                                                Для телефона
-                                            </a>
-                                            <a class="nav-link text-uppercase" data-bs-toggle="tab" href="#tabletTab">
-                                                Для планшета
-                                            </a>
-                                            <a class="nav-link text-uppercase" data-bs-toggle="tab" href="#laptopTab">
-                                                Для ноутбука
-                                            </a>
-                                        </nav>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tab content -->
-                        <div class="card card-lg">
-                            <div class="card-body">
-                                <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="phoneTab">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-6 col-md">
-
-                                                    <!-- Links -->
-                                                    <ul class="list-styled mb-6 mb-md-0 fs-sm">
-                                                        {% for t in phoneHolders %}
-
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">{{ t.name }}</a>
-                                                        </li>
-
-                                                        {% endfor %}
-                                                    </ul>
-
-                                                </div>
-                                                <div class="col-4 d-none d-lg-block">
-
-                                                    <!-- Card -->
-                                                    <div class="card">
-
-                                                        <!-- Image -->
-                                                        <img class="card-img"
-                                                             src="./assets/img/products/product-110.jpg" alt="...">
-
-                                                        <!-- Overlay -->
-                                                        <div class="card-img-overlay bg-dark-0 bg-hover align-items-center">
-                                                            <div class="text-center">
-                                                                <a class="btn btn-white stretched-link"
-                                                                   href="./shop.html">
-                                                                    Shop Sweaters <i class="fe fe-arrow-right ms-2"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade show active" id="tabletTab">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-6 col-md">
-
-                                                    <!-- Heading -->
-                                                    <div class="mb-5 fw-bold">Clothing</div>
-
-                                                    <!-- Links -->
-                                                    <ul class="list-styled mb-6 mb-md-0 fs-sm">
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">All
-                                                                Clothing</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Blouses &
-                                                                Shirts</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Coats &
-                                                                Jackets</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Dresses</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Hoodies &
-                                                                Sweats</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Denim</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Jeans</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Jumpers &
-                                                                Cardigans</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Leggings</a>
-                                                        </li>
-                                                    </ul>
-
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade show active" id="laptopTab">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-6 col-md">
-
-                                                    <!-- Heading -->
-                                                    <div class="mb-5 fw-bold">Shoes & Boots</div>
-
-                                                    <!-- Links -->
-                                                    <ul class="list-styled mb-6 mb-md-0 fs-sm">
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">All Shoes &
-                                                                Boots</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Branded
-                                                                Shoes</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Boots</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Heels</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Trainers</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Sandals</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Shoes</a>
-                                                        </li>
-                                                        <li class="list-styled-item">
-                                                            <a class="list-styled-link" href="./shop.html">Wide Fit
-                                                                Shoes</a>
-                                                        </li>
-                                                    </ul>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </li>
                 <li class="nav-item dropdown">
 
                     <!-- Toggle -->
-                    <a class="nav-link" data-bs-toggle="dropdown" href="#">Shop</a>
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#">Каталог</a>
 
                     <!-- Menu -->
                     <div class="dropdown-menu" style="min-width: 650px;">
@@ -1793,172 +1610,51 @@
                                     <div class="col">
 
                                         <!-- Heading -->
-                                        <div class="mb-5 fw-bold">Shop</div>
+                                        <div class="mb-5 fw-bold">Для телефонов</div>
 
                                         <!-- Links -->
-                                        <ul class="list-styled mb-7 fs-sm">
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shop.html">Default</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shop-topbar.html">Topbar</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shop-collapse.html">Collapse</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shop-simple.html">Simple</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shop-masonry.html">Masonry</a>
-                                            </li>
-                                        </ul>
+                                        <ul class="list-styled mb-6 mb-md-0 fs-sm">
+                                            {% for t in phoneHolders %}
 
-                                        <!-- Heading -->
-                                        <div class="mb-5 fw-bold">Product</div>
+                                            <li class="list-styled-item">
+                                                <a class="list-styled-link" href="./shop.html">{{ t.name }}</a>
+                                            </li>
 
-                                        <!-- Links -->
-                                        <ul class="list-styled fs-sm">
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./product.html">Default</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./product-images-left.html">Images
-                                                    Left</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./product-image-grid.html">Image
-                                                    Grid</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./product-image-slider.html">Image
-                                                    Slider</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./product-images-stacked.html">Images
-                                                    Stacked</a>
-                                            </li>
+                                            {% endfor %}
                                         </ul>
 
                                     </div>
                                     <div class="col">
 
                                         <!-- Heading -->
-                                        <div class="mb-5 fw-bold">Support</div>
+                                        <div class="mb-5 fw-bold">Для планшетов</div>
 
                                         <!-- Links -->
-                                        <ul class="list-styled mb-7 fs-sm">
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shopping-cart.html">Shopping
-                                                    Cart</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./checkout.html">Checkout</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./order-completed.html">Order
-                                                    Completed</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./shipping-and-returns.html">Shipping
-                                                    & Returns</a>
-                                            </li>
-                                        </ul>
+                                        <ul class="list-styled mb-6 mb-md-0 fs-sm">
+                                            {% for t in tabletHolders %}
 
-                                        <!-- Heading -->
-                                        <div class="mb-5 fw-bold">Account</div>
+                                            <li class="list-styled-item">
+                                                <a class="list-styled-link" href="./shop.html">{{ t.name }}</a>
+                                            </li>
 
-                                        <!-- Links -->
-                                        <ul class="list-styled fs-sm">
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-order.html">Order</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-orders.html">Orders</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-wishlist.html">Wishlist</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-personal-info.html">Personal
-                                                    Info</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-address.html">Addresses</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-address-edit.html">Addresses:
-                                                    New</a>
-                                            </li>
+                                            {% endfor %}
                                         </ul>
 
                                     </div>
                                     <div class="col">
 
-                                        <!-- Links -->
-                                        <ul class="list-styled mb-7 fs-sm">
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-payment.html">Payment</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-payment-edit.html">Payment:
-                                                    New</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./account-payment-choose.html">Payment:
-                                                    Choose</a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" href="./auth.html">Auth</a>
-                                            </li>
-                                        </ul>
-
                                         <!-- Heading -->
-                                        <div class="mb-5 fw-bold">Modals</div>
+                                        <div class="mb-5 fw-bold">Для ноутбуков</div>
 
                                         <!-- Links -->
-                                        <ul class="list-styled fs-sm">
+                                      <ul class="list-styled mb-6 mb-md-0 fs-sm">
+                                            {% for t in laptopHolders %}
+
                                             <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="modal"
-                                                   href="#modalNewsletterHorizontal">
-                                                    Newsletter: Horizontal
-                                                </a>
+                                                <a class="list-styled-link" href="./shop.html">{{ t.name }}</a>
                                             </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="modal"
-                                                   href="#modalNewsletterVertical">
-                                                    Newsletter: Vertical
-                                                </a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="modal" href="#modalProduct">
-                                                    Product
-                                                </a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="offcanvas"
-                                                   href="#modalSearch">
-                                                    Search
-                                                </a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="offcanvas"
-                                                   href="#modalShoppingCart">
-                                                    Shopping Cart
-                                                </a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="modal"
-                                                   href="#modalSizeChart">
-                                                    Size Chart
-                                                </a>
-                                            </li>
-                                            <li class="list-styled-item">
-                                                <a class="list-styled-link" data-bs-toggle="modal"
-                                                   href="#modalWaitList">
-                                                    Wait List
-                                                </a>
-                                            </li>
+
+                                            {% endfor %}
                                         </ul>
 
                                     </div>
