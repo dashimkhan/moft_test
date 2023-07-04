@@ -7,7 +7,10 @@ from django.http import HttpResponse
 menu = ['Для телефона', 'Для планшета', 'Для ноутбука']
 
 def about(request):
-    return render(request, 'moftshop/about.html', {'menu': menu, 'title': 'О сайте'})
+    return render(request, 'moftshop/about.html', {'title': 'О сайте'})
+
+def contact(request):
+    return render(request, 'moftshop/contact.html', {'title': 'Контакты'})
 
 def index(request):
     typeHolder = ProductType.objects.get(code='holder')
@@ -26,6 +29,9 @@ def index(request):
                       'tabletHolders': tabletHolders,
                       'laptopHolders': laptopHolders
                   })
+
+def shopping_cart(request):
+    return render(request, 'moftshop/shopping-cart.html', {'title': 'Корзина'})
 
 # def product_detail(request, id, slug):
 #     product = get_object_or_404(Product, id=id, slug=slug, available=True)
