@@ -33,6 +33,12 @@ def index(request):
 def shopping_cart(request):
     return render(request, 'moftshop/shopping-cart.html', {'title': 'Корзина'})
 
+def orders_history(request):
+    return render(request, 'moftshop/order-history.html', {'title': 'История'})
+
+def order(request):
+    return render(request, 'moftshop/order.html', {'title': 'Заказ'})
+
 # def product_detail(request, id, slug):
 #     product = get_object_or_404(Product, id=id, slug=slug, available=True)
 #     return render(request, 'shop/product/detail.html', {'product': product})
